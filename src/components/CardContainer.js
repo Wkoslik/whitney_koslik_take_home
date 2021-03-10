@@ -1,4 +1,6 @@
-const CardHolder  = (props) => {
+//where cards get added
+//
+const CardContainer  = (props) => {
     return (
         <div>
             <h1>I will hold the cards</h1>
@@ -6,4 +8,4 @@ const CardHolder  = (props) => {
     )
 }
 
-export default CardHolder
+export default CardContainer
