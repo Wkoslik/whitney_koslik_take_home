@@ -7,12 +7,15 @@ import Footer from './Footer'
 
 const Landing = (props) => {
     return (
-        <div>
-            <h1>Landing Page</h1>
-            <Header />
-            <CardContainer />
-            <Instructions />
-            <Footer />
+        <div className="landing-page">
+            <div className="landing-card">
+                <Header />
+                <CardContainer />
+                <Footer />
+            </div>
+            <div className="landing-instructions">
+                <Instructions />
+            </div>
         </div>
     )
 }

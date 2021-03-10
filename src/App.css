@@ -7,6 +7,29 @@
   pointer-events: none;
 }
 
+.landing-page{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  height: 100vh;
+  border: 1px solid black;
+}
+
+.landing-card{
+  height: 100%;
+  width: 75%;
+}
+
+.landing-instructions{
+  width: 25%;
+}
+
+.card-container{
+  height: 500px;
+  overflow-y: scroll;
+  border: 1px solid red;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
