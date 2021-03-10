@@ -5,8 +5,9 @@ import React from 'react'
 
 const Cards = (props) => {
     return (
-        <div>
+        <div className="cards">
             <h1>{props.number}</h1>
+            <button>X</button> 
         </div>
     )
 }

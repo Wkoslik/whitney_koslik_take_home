@@ -9,7 +9,6 @@ const CardContainer  = (props) => {
 
     return (
         <div className="card-container">
-            <h1>I will hold the cards</h1>
             {allCards}
         </div>
     )

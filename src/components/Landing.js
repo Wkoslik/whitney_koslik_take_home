@@ -17,7 +17,11 @@ const Landing = (props) => {
         console.log('⭐️', cardNumbers)
     }
 
-    const handSortCards = () =>{
+    const handleSortCards = () =>{
+
+    }
+
+    const handleDelete = () =>{
 
     }
 
