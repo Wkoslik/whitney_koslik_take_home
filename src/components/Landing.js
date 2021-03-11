@@ -9,20 +9,20 @@ const Landing = () => {
     const [cardNumbers, setCardNumbers] = useState([])
 
     //adds a card to the card container
-    const handleAddCard = () =>{
+    const handleAddCard = () => {
         //generate random number between 1 and 100
-        let randomNum = Math.floor(Math.random()*101)
+        let randomNum = Math.floor(Math.random() * 101)
         //add random number to the end of the cardNumbers array
         setCardNumbers([...cardNumbers, randomNum])
     }
 
     //quick sort of cards from smallest to largest
-    const handleSortCards = () =>{
-        setCardNumbers([...cardNumbers].sort((a,b) => a-b))
+    const handleSortCards = () => {
+        setCardNumbers([...cardNumbers].sort((a, b) => a - b))
     }
 
     //deletes cards
-    const handleDelete = (e) =>{
+    const handleDelete = (e) => {
         e.preventDefault()
         //create a temporary array
         let tempArr = [...cardNumbers]
@@ -35,8 +35,8 @@ const Landing = () => {
     return (
         <div className="landing-page">
             <div className="landing-card">
-                <Header handleAddCard={handleAddCard} handleSortCards={handleSortCards}/>
-                <CardContainer cardNumbers={cardNumbers} handleDelete={handleDelete}/>
+                <Header handleAddCard={handleAddCard} handleSortCards={handleSortCards} />
+                <CardContainer cardNumbers={cardNumbers} handleDelete={handleDelete} />
                 <Footer />
             </div>
             <div className="landing-instructions">

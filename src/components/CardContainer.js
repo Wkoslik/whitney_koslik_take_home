@@ -2,9 +2,9 @@
 import React from 'react'
 import Cards from './Cards'
 
-const CardContainer  = (props) => {
-    let allCards = props.cardNumbers.map((num, i) =>{
-        return <Cards number={num} key={i} index={i} handleDelete={props.handleDelete}/>
+const CardContainer = (props) => {
+    let allCards = props.cardNumbers.map((num, i) => {
+        return <Cards number={num} key={i} index={i} handleDelete={props.handleDelete} />
     })
 
     return (

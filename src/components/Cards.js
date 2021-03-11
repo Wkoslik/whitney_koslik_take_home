@@ -6,9 +6,10 @@ import React from 'react'
 const Cards = (props) => {
     return (
         <div className="cards">
-            <div className="button-container"><input type="submit" value="X" name={props.index} onClick={props.handleDelete} /></div>
+            <div className="button-container">
+                <input type="submit" value="X" name={props.index} onClick={props.handleDelete} />
+            </div>
             <h1>{props.number}</h1>
-
         </div>
     )
 }
