@@ -2,70 +2,109 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header, footer {
+  background-color: #3473ff;
+  color: #e6e6e6;
+  line-height: 75px;
+  height: 75px;
+}
+
+.btn{
+  margin: 16px; 
+  font-size: 18px;
+  background-color: #3473ff;
+  border: 1px solid #e6e6e6;
+  color: #e6e6e6;
+  padding: 8px;
+  transition: 500ms ease-in-out;
+}
+
+.btn:hover{
+  cursor: pointer;
+  font-size: 22px;
+  border-radius: 0;
 }
 
 .landing-page{
   display: flex;
-  width: 1000px;
-  margin: 0 auto;
+  width: 90%;
   height: 100vh;
-  border: 1px solid black;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .landing-card{
   height: 100%;
-  width: 75%;
+  width: 100%;
 }
 
 .landing-instructions{
-  width: 25%;
+  width: 400px;
+  margin: 16px;
+  overflow-y: scroll;
+}
+
+.instructions{
+  text-align: left;
+  padding: 8px;
 }
 
 .card-container{
-  height: 500px;
+  height: calc(100vh - 150px);
   overflow-y: scroll;
-  border: 1px solid red;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
 .cards{
-  width: 200px;
-  height: 150px;
+  width: 350px;
+  height: 250px;
   margin: 16px;
+  box-shadow: 0px 1px 10px 0px rgba(0,0,0, .5);
+}
+
+.cards > h1{
+  line-height: 250px;
+  margin: 0;
+}
+
+.button-container {
+  position: relative;
+}
+
+.button-container >input{
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  transition: 500ms ease-in-out;
+}
+
+.button-container >input:hover{
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  top: -10px;
+  height: -10px;
+  background-color: #3473ff;
+  color: #e6e6e6
+}
+
+@media only screen and (max-width: 675px){
+.landing-instructions{
+  display: none;
+}
+.landing-page{
+  width: 90%;
   border: 1px solid red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-card{
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

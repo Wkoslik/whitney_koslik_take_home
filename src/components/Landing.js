@@ -15,8 +15,8 @@ const Landing = (props) => {
         setCardNumbers([...cardNumbers, randomNum])
     }
 
+
     const handleSortCards = () =>{
-        console.log('handling sort')
         setCardNumbers([...cardNumbers].sort((a,b) => a-b))
     }
 

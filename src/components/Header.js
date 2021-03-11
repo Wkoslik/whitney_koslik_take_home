@@ -3,10 +3,10 @@ import React from 'react'
 
 const Header = (props) => {
     return (
-        <div>
-            <button onClick={props.handleAddCard}>Add Card</button>
-            <button onClick={props.handleSortCards}>Sort Cards</button>
-        </div>
+        <header>
+            <button className="btn" onClick={props.handleAddCard}>Add Card</button>
+            <button className="btn" onClick={props.handleSortCards}>Sort Cards</button>
+        </header>
     )
 }
 
