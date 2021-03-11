@@ -1,10 +1,10 @@
 //where cards get added
-import React, { useState } from 'react'
+import React from 'react'
 import Cards from './Cards'
 
 const CardContainer  = (props) => {
-    let allCards = props.cardNumbers.map(num =>{
-        return <Cards number={num} />
+    let allCards = props.cardNumbers.map((num, i) =>{
+        return <Cards number={num} key={i} index={i} handleDelete={props.handleDelete}/>
     })
 
     return (

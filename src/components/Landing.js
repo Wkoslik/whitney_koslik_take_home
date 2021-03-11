@@ -6,30 +6,32 @@ import Instructions from './Instructions'
 import Footer from './Footer'
 
 const Landing = (props) => {
-    const [cardNumbers, setCardNumber] = useState([])
+    const [cardNumbers, setCardNumbers] = useState([])
 
     const handleAddCard = (e) =>{
         e.preventDefault()
         //generate random number between 1 and 100
         let randomNum = Math.floor(Math.random()*101)
-        setCardNumber([...cardNumbers, randomNum])
-        console.log('🔥', randomNum)
-        console.log('⭐️', cardNumbers)
+        setCardNumbers([...cardNumbers, randomNum])
     }
 
     const handleSortCards = () =>{
-
+        console.log('handling sort')
+        setCardNumbers([...cardNumbers].sort((a,b) => a-b))
     }
 
-    const handleDelete = () =>{
-
+    const handleDelete = (e) =>{
+        e.preventDefault()
+        let tempArr = [...cardNumbers]
+        tempArr.splice(e.target.name, 1)
+        setCardNumbers([...tempArr])
     }
 
     return (
         <div className="landing-page">
             <div className="landing-card">
-                <Header handleAddCard={handleAddCard}/>
-                <CardContainer cardNumbers={cardNumbers}/>
+                <Header handleAddCard={handleAddCard} handleSortCards={handleSortCards}/>
+                <CardContainer cardNumbers={cardNumbers} handleDelete={handleDelete}/>
                 <Footer />
             </div>
             <div className="landing-instructions">

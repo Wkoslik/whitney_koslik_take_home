@@ -7,7 +7,7 @@ const Cards = (props) => {
     return (
         <div className="cards">
             <h1>{props.number}</h1>
-            <button>X</button> 
+            <input type="submit" value="X" name={props.index} onClick={props.handleDelete} />
         </div>
     )
 }
