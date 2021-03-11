@@ -1,4 +1,5 @@
-//There is a fixed-height toolbar on teh top of the window that has buttons
+//There is a fixed-height toolbar on the top of the window that has buttons
+
 import React from 'react'
 
 const Header = (props) => {

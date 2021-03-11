@@ -49,6 +49,12 @@ header, footer {
   padding: 8px;
 }
 
+.instructions>p{
+  padding: 8px;
+  margin: 4px;
+  text-indent: 10px;
+}
+
 .card-container{
   height: calc(100vh - 150px);
   overflow-y: scroll;
@@ -101,10 +107,8 @@ header, footer {
 }
 .landing-page{
   width: 90%;
-  border: 1px solid red;
 }
 .landing-card{
   width: 100%;
 }
-
 }

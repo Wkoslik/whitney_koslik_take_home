@@ -1,5 +1,7 @@
 //There is a fixed-height footer on the bottom of the window that just shows the text "footer".
-const Footer = (props) => {
+import React from 'react'
+
+const Footer = () => {
     return (
         <footer>Footer</footer>
     )

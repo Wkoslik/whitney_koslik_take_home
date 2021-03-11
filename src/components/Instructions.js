@@ -1,5 +1,8 @@
-//instructions on from blue owl
-const Instructions = (props) => {
+//instructions on test from blue owl
+//"There is a fixed-width pane on the right side of the window that remains attached to the right side when the user re-sizes. Inside the pane, please paste a formatted display of these instructions. And if the browser width is small, hide the pane completely."
+import React from 'react'
+
+const Instructions = () => {
     return (
         <div className="instructions-container">
             <h1>Instructions</h1>
